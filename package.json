@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cypress": "^13.7.1",
+    "mochawesome": "^7.1.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "concurrently": "^8.2.2",
+    "cypress-parallel": "^0.14.0",
+    "mocha": "^10.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "test:spec1": "cypress run --spec cypress/e2e/integration/tests/loginSpec.cy.js",
+    "test:spec2": "cypress run --spec cypress/e2e/integration/tests/productSpec.cy.js",
+    "test:spec3": "cypress run --spec cypress/e2e/integration/tests/cartDetailsSpec.cy.js",
+    "test:parallel": "npx concurrently \"npm run test:spec1\" \"npm run test:spec2\" \"npm run test:spec3\""
+  }
+}

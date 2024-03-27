@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://automationexercise.com/",
+    "supportFile": "support/commands.js",
+    "reporter": "mochawesome",
+        "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    },
+    "browsers": ["chrome", "firefox", "electron"]
+}
