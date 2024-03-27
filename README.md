@@ -21,20 +21,20 @@ git clone https://github.com/Nimra786/viwellAssesment.git
 cd AutomationAssesment
 
 3. **Install Dependencies:**
-npm install
+`npm install`
 
 ## Running Tests
 Once the dependencies are installed, you can run the tests. There are two ways to run tests:
 
 ### 1. Using the Cypress Test Runner (Interactive Mode):
 To run tests interactively in the Cypress Test Runner, use the following command:
-npx cypress open
+`npx cypress open`
 
 This command will open the Cypress Test Runner GUI, where you can select and run individual test files.
 
 ### 2. Using Headless Mode:
 To run tests in headless mode (without the GUI), use the following command:
-npx cypress run
+`npx cypress run`
 
 ### 3. Test Scenarios:
 I have use POM technique to structure my test cases.
@@ -77,20 +77,20 @@ There were not much to customize so I just make login fucntionality as login com
 
 ### iii.Cross-Browser Testing:
 For Cross browser testing I simply use browser option in my cypress.json file , and I can give it as option when I run test cases in headless mode to run test browser from any of the list I have given, and it will run test cases on that browser.
-command: npx cypress run --browser browser-name
+command: `npx cypress run --browser browser-name`
 
 ### vi.Parallel Execution:
 For this as I didnt configure any cli at this moment so I just add scripts in my package.json and then try to run my script files parallaly.
 
-command: npm run test:parallel
+command: `npm run test:parallel`
 
 ### 5.Reporting:
 Generate detailed test reports with clear descriptions of test results, including any failures or errors encountered during execution.
 
 - For creation of reports for all test files together,
-  Use npx cypress run --reporter mochawesome
+  Use `npx cypress run --reporter mochawesome`
 - For creation for each test case file separately
-  Use npx cypress run --reporter mochawesome --reporter-options "reportFilename=test1"
+  Use `npx cypress run --reporter mochawesome --reporter-options "reportFilename=test1"`
   
 ## 🚀 About Me
 - [@Nimra786](https://github.com/Nimra786)
